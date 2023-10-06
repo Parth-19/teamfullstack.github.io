@@ -27,6 +27,8 @@ body::before {
   background: rgba(34, 34, 34, 0.8);
 }
 
+
+
 @media (min-width: 1024px) {
   body {
     background-attachment: fixed;
