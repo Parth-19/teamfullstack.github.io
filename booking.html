@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CapTech2025 Tickets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #000000, #003366);
+      color: #fff;
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: auto;
+    }
+
+    .logo {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ef4444;
+      margin-top: 10px;
+    }
+
+    .sub-text {
+      text-align: center;
+      margin-bottom: 60px;
+      font-weight: 500;
+      color: #d1d5db;
+    }
+
+    .tickets {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .ticket {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 280px;
+      height: 450px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .ticket:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .ticket h3 {
+      font-size: 1.25rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #ffffff;
+      font-weight: 700;
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .inclusions {
+      margin-top: 12px;
+      padding-left: 20px;
+      color: #ffffff;
+    }
+
+    .inclusions li {
+      margin-bottom: 6px;
+      list-style-type: disc;
+    }
+
+    .buy-btn {
+      background: transparent;
+      color: #FFD700;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid #FFD700;
+      transition: all 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+    }
+
+    .buy-btn:hover {
+      background-color: #FFD700;
+      color: #000000;
+    }
+
+    .terms {
+      margin-top: 80px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .terms h3 {
+      color: #facc15;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+    }
+
+    .terms p,
+    .terms li {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: #d1d5db;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+    }
+
+    footer a {
+      color: #facc15;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+      }
+
+      .tickets {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .ticket {
+        max-width: 320px;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img class="logo" src="assets\img\CLCT1.png" alt="CapTech Logo">
+
+    <!-- Hero Text -->
+    <div class="hero-text">
+      <h1>TICKET AVAILABILITY IS LIMITED</h1>
+      <h2>GET YOURS TODAY</h2>
+    </div>
+    <p class="sub-text">💥 50% Discount valid until 30th June 2025 | Use Code SIPBN50</p>
+
+    <!-- Tickets -->
+    <div class="tickets">
+      <!-- Ticket 1 -->
+      <div class="ticket">
+        <h3>#CapTech2025 + Post Networking</h3>
+        <div class="price">A$1,250.00</div>
+        <ul class="inclusions">
+          <li>#CapTech2025 Summit at Hyatt Regency</li>
+          <li>Post-event networking drinks</li>
+        </ul>
+        <div style="margin-top: auto;">
+          <a class="buy-btn" href="https://buy.stripe.com/dR6dUjgTj2Rcd5CfYY" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Ticket 2 -->
+      <div class="ticket">
+        <h3>#CapTech2025 + Welcome Drinks</h3>
+        <div class="price">A$1,560.00</div>
+        <ul class="inclusions">
+          <li>Welcome Drinks at NSW Parliament House</li>
+          <li>CapTech2025 Summit</li>
+          <li>Post-event networking drinks</li>
+        </ul>
+        <div style="margin-top: auto;">
+          <a class="buy-btn" href="https://buy.stripe.com/4gw6rRbyZ77s5Da8wz" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Ticket 3 -->
+      <div class="ticket">
+        <h3>#CapTech2025 Summit Pass</h3>
+        <div class="price">A$2,340.00</div>
+        <ul class="inclusions">
+          <li>NSW Parliament Drinks</li>
+          <li>All-day event + Post-event Drinks</li>
+          <li>Private Dinner</li>
+          <li>2 Days of Business Matching</li>
+        </ul>
+        <div style="margin-top: auto;">
+          <a class="buy-btn" href="https://buy.stripe.com/28o7vV32t0J4ghO9AC" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Ticket 4 -->
+      <div class="ticket">
+        <h3>Corporate Table of 10</h3>
+        <div class="price">A$12,470.00</div>
+        <ul class="inclusions">
+          <li>10 Tickets to CapTech2025 Summit</li>
+          <li>Post-event networking drinks</li>
+        </ul>
+        <div style="margin-top: auto;">
+          <a class="buy-btn" href="https://buy.stripe.com/4gw5nNdH72Rc6He3cd" target="_blank">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms & Conditions -->
+    <div class="terms">
+      <h3>Tickets Terms & Conditions</h3>
+      <p>Contact: <a href="mailto:info@sipbn.com.au" style="color:#facc15;">info@sipbn.com.au</a> for more details.</p>
+      <ul>
+        <li>Service Fee: A flat fee of 4% is included in the ticket price as a service fee.</li>
+        <li>Discount Code: Use promo code <strong>SIPBN50</strong> to avail a 50% discount.</li>
+        <li>Non-Refundable: All ticket sales are final unless the event is cancelled or rescheduled.</li>
+        <li>Ticket Transfer: Tickets are non-transferable unless explicitly permitted.</li>
+        <li>Event Entry: Present a valid digital or printed ticket at entry.</li>
+        <li>Code Usage Limit: Discount codes may have usage limits and cannot be combined.</li>
+        <li>Changes & Cancellations: Organizers may modify event details without notice.</li>
+        <li>Compliance: Attendees must follow venue rules and local laws.</li>
+        <li>Liability: Organizers are not liable for ticket loss, personal injuries, or property damage.</li>
+        <li>Acceptance: Purchasing a ticket means you accept these terms.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Ticketing Portal designed, developed and maintained by Team FullStack, India — 
+      <a href="https://www.teamfullstack.in" target="_blank">www.teamfullstack.in</a>
+    </footer>
+  </div>
+</body>
+</html>
