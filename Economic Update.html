@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIPBN – Economic Update</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Same <head> and fonts as before -->
+  <head>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(to right, #000000, #003366);
+        color: #fff;
+        line-height: 1.6;
+        padding: 20px;
+      }
+  
+      .container { max-width: 1200px; margin: auto; }
+  
+      .logo-bar img {
+        max-height: 50px;
+      }
+  
+      .hero-text {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .hero-text h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+  
+      .details {
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+      }
+  
+      .details p { margin: 4px 0; }
+  
+      .content-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+      }
+  
+      .agenda, .flyer {
+        flex: 1;
+        min-width: 300px;
+      }
+  
+      .agenda h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        color: #00bfff;
+      }
+  
+      .agenda ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+  
+      .agenda ul li {
+        margin-bottom: 16px;
+      }
+  
+      .agenda ul li strong { color: #facc15; }
+  
+      .flyer img {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+      }
+  
+      .ticket {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+  
+      .ticket:hover { transform: translateY(-5px); }
+  
+      .ticket h3 {
+        font-size: 1.1rem;
+        color: #ffffff;
+        margin-bottom: 8px;
+      }
+  
+      .price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+  
+      .buy-btn {
+        background: #f59e0b;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: background 0.3s ease;
+      }
+  
+      .buy-btn:hover { background: #eab308; }
+  
+      .speakers {
+        margin-top: 50px;
+      }
+  
+      .speakers h3 {
+        text-align: center;
+        font-size: 1.6rem;
+        color: #00bfff;
+        margin-bottom: 25px;
+      }
+  
+      .speaker-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+  
+      .speaker-card {
+        background: #1e293b;
+        border-radius: 12px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+  
+      .speaker-card:hover { transform: translateY(-4px); }
+  
+      .speaker-card img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10%;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+  
+      .speaker-card h4 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+        color: #facc15;
+      }
+  
+      .speaker-card p {
+        font-size: 0.85rem;
+        color: #e2e8f0;
+      }
+  
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.8rem;
+        color: #94a3b8;
+      }
+  
+      /* MOBILE OPTIMIZATION */
+      @media (max-width: 768px) {
+        .hero-text h1 { font-size: 1.4rem; }
+        .details { text-align: center; }
+        .content-section {
+          flex-direction: column;
+          align-items: center;
+        }
+        .agenda, .flyer {
+          width: 100%;
+        }
+        .ticket {
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .buy-btn {
+          width: 100%;
+          padding: 12px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  
+<body>
+  <div class="container">
+    <!-- Logo Bar -->
+    <div class="logo-bar">
+      <img src="assets/img/CLCT1.png" alt="SIPBN Logo">
+    </div>
+
+    <!-- Hero Title -->
+    <div class="hero-text">
+      <h1>SIPBN – Economic Update: Opportunities Ahead</h1>
+    </div>
+
+    <!-- Event Details -->
+    <div class="details">
+      <p><strong>Date:</strong> Friday, 27 June 2025</p>
+      <p><strong>Time:</strong> 5:00 PM – 8:00 PM</p>
+      <p><strong>Venue:</strong> The Royal Exchange of Sydney, 1 Gresham Street</p>
+    </div>
+
+    <!-- Agenda and Flyer + Ticket -->
+    <div class="content-section">
+      <div class="agenda">
+        <h3>Event Agenda</h3>
+        <ul>
+          <li><strong>5:00 PM –</strong> Guest Arrival & Networking Reception<br>• Welcome drinks and canapés<br>• Investor and presenter networking</li>
+          <li><strong>5:30 PM –</strong> Opening Remarks<br>• Welcome by Host / MC<br>• Acknowledgment of Country<br>• Introduction of event partners and speakers</li>
+          <li><strong>5:35 PM –</strong> Keynote Address<br><strong>Stephen Walters – Chief Economist</strong><br><em>“The Economic Update: Opportunities Ahead”</em><br>• National and global economic outlook<br>• Market shifts and investment signals<br>• Implications for Australian industry</li>
+          <li><strong>5:55 PM –</strong> Global Economic & Investment Outlook<br><strong>Representative of the Consulate General of India – Sydney</strong><br><em>“India and the World: Investment Partnerships for the Future”</em><br>• India’s global investment priorities<br>• Bilateral opportunities with Australia<br>• Key sectors for collaboration and capital flow</li>
+          <li><strong>6:05 PM –</strong> Global Economic Outlook – Consulate General of India</li>
+          <li><strong>6:15 PM –</strong> Investor Panel: Unlocking Opportunity in a Shifting Economy<br><strong>Moderated by Dr. Joseph Risk</strong><br><strong>Panelists:</strong><br>• Sidharth Sharma<br>• Rod McGeoch AO<br>• Nicole Gibson<br>• Abhishek Kaushik<br><strong>Discussion Themes:</strong><br>• Growth sectors and policy influence<br>• Risk, capital, and investor sentiment<br>• Innovation, inclusion, and resilience in business</li>
+          <li><strong>6:45 PM –</strong> Presenting Companies Showcase<br>• Securely<br>• International Liquor<br>• Property – R2B Group<br>• Titel<br>• TBC</li>
+          <li><strong>7:15 PM –</strong> Closing Remarks & #CapTech2025 Preview</li>
+          <li><strong>7:20 PM –</strong> Networking & Drinks Continue</li>
+          <li><strong>8:00 PM –</strong> Event Close</li>
+        </ul>
+      </div>
+      <div class="flyer">
+        <img src="assets/img/EUE.png" alt="Event Flyer">
+        <div class="ticket">
+          <h3>Event Entry Pass</h3>
+          <div class="price">A$80.00</div>
+          <a class="buy-btn" href="https://buy.stripe.com/4gw5nN1Yp0J47Li7sw" target="_blank">Buy Ticket</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakers Section -->
+    <div class="speakers">
+      <h3>Featured Speakers</h3>
+      <div class="speaker-grid">
+        <div class="speaker-card"><img src="assets/img/S Janakiraman.png"><h4>S Janakiraman</h4><p>Consulate General of India</p></div>
+        <div class="speaker-card"><img src="assets/img/Stephen.png"><h4>Stephen Walters</h4><p>Chief Economist</p></div>
+        <div class="speaker-card"><img src="assets/img/Rod.png"><h4>Rod McGeoch AO</h4><p>Legal Strategist</p></div>
+        <div class="speaker-card"><img src="assets/img/Joseph.png"><h4>Dr. Joseph Risk</h4><p>Panel Moderator</p></div>
+        <div class="speaker-card"><img src="assets/img/Sidharath.png"><h4>Sidharth Sharma</h4><p>Industry Leader</p></div>
+        <div class="speaker-card"><img src="assets/img/Nicole.png"><h4>Nicole Gibson</h4><p>Impact Entrepreneur</p></div>
+        <div class="speaker-card"><img src="assets/img/Abhi.png"><h4>Abhishek Kaushik</h4><p>Tax & Transfer Pricing</p></div>
+      </div>
+    </div>
+
+    <!-- Terms & Conditions -->
+    <div class="details" style="margin-top: 40px; font-size: 0.85rem;">
+      <h3 style="color: #facc15; margin-bottom: 10px;">Tickets Terms & Conditions</h3>
+      <ul style="list-style-type: disc; padding-left: 20px;">
+        <li>Contact: <a href="mailto:info@sipbn.com.au" style="color:#00bfff;">info@sipbn.com.au</a> for more details.</li>
+        <li>Service Fee: A flat fee of 4% is included in the ticket price as a service fee.</li>
+        <li>Non-Refundable: All ticket sales are final unless the event is cancelled or rescheduled.</li>
+        <li>Ticket Transfer: Tickets are non-transferable unless explicitly permitted.</li>
+        <li>Event Entry: Present a valid digital or printed ticket at entry.</li>
+        <li>Code Usage Limit: Discount codes may have usage limits and cannot be combined.</li>
+        <li>Changes & Cancellations: Organizers may modify event details without notice.</li>
+        <li>Compliance: Attendees must follow venue rules and local laws.</li>
+        <li>Liability: Organizers are not liable for ticket loss, personal injuries, or property damage.</li>
+        <li>Acceptance: Purchasing a ticket means you accept these terms.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Ticketing Portal designed, developed, and maintained by <strong>Team FullStack, India</strong>
+    </footer>
+  </div>
+</body>
+</html>
